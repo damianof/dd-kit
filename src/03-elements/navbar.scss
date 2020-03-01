@@ -1,3 +1,61 @@
 .navbar {
-    
+	position: relative;
+	display: flex;
+	flex-wrap: wrap; // allow us to do the line break for collapsing content
+	align-items: center;
+	justify-content: space-between; // space out brand from logo
+
+    border: 0;
+    //border-radius: $border-radius-base;
+    padding: 0.625rem 0;
+    margin-bottom: 20px;
+    color: #555;
+    background-color: #fff!important;
+	box-shadow: 0 4px 18px 0 rgba(0,0,0,.12), 0 7px 10px -5px rgba(0,0,0,.15);
+
+	&.transparent {
+        background-color: transparent !important;
+        box-shadow: none;
+    }
+	
+	> .container,
+	> .container-fluid {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	.nav {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column; // cannot use `inherit` to get the `.navbar`s value
+		padding-left: 0;
+		margin-bottom: 0;
+		list-style: none;
+
+        .item .link {
+			display: block;
+            position: relative;
+            color: inherit;
+           // padding: $padding-general-x;
+            //font-weight: $font-weight-default;
+            //font-size: $mdb-btn-font-size-base;
+            //text-transform: uppercase;
+            //border-radius: $border-radius-base;
+            line-height: 20px;
+        }
+
+        .dropdown-menu-right{
+            transform-origin: 100% 0;
+        }
+
+        // .item.active .link {
+        //     &,
+        //     &:hover,
+        //     &:focus {
+        //       background-color: rgba(255, 255, 255, 0.1);
+        //     }
+        // }
+	}
 }
