@@ -1,0 +1,22 @@
+{
+	"name": "dd-kit",
+	"version": "0.2.1",
+	"description": "Minimal CSS framework built in SASS/SCSS",
+	"scripts": {
+	},
+	"dependencies": {},
+	"devDependencies": {
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/damianof/dd-git.git"
+	},
+	"keywords": [
+	],
+	"author": "Damiano Fusco",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/damianof/dd-kit/issues"
+	},
+	"homepage": "https://github.com/damianof/dd-kit#readme"
+}

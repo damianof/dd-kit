@@ -1,0 +1,7 @@
+// body variables
+$body-vars-map: (
+	'background-color': 'blue',
+	'font-family': #{ map-get($global-font-catalog, 'sans-serif') },
+	'padding': 1.5rem
+);
+

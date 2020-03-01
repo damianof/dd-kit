@@ -1,0 +1,8 @@
+$global-font-catalog: (
+	'sans-serif': 	'Geneva, sans-serif',
+	'serif': 		'Merriweather, Georgia, "Times New Roman", serif',
+	'mono': 		'"Source Code Pro", Courier, mono',
+
+	'size': 		'1rem !default', // Assumes the browser default, typically `16px`
+	'weight':		'400'
+);

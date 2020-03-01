@@ -1,0 +1,11 @@
+$dd-first-color: map-get($global-color-catalog, map-get($layout-vars-map, 'color'));
+
+.dd-first {
+	color: $dd-first-color;
+}
+
+.flex {
+	display: flex;
+	justify-items: center;
+	align-items: center;
+}
