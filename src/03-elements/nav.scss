@@ -1,3 +1,19 @@
-.nav {
+ul.nav {
+	list-style: none;
+
+	&.vertical {
+		flex-direction: column;
+	}
+
+	&.horizontal {
+		flex-direction: row;
+	}
+
+	> li.item {
+		padding: 0;
+		> a.link {
+			line-height: 1.0;
+		}
+	}
 
 }

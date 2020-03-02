@@ -1,13 +1,17 @@
 $global-color-catalog: (
+	'transparent': 	'none',
 	'white': 		#ffffff,
+	'off-white': 	#efefef,
 	'gray': 		#999999,
 	'black': 		#000000,
 
 	'purple': 		#9c27b0,
 	'blue':			#00acc1,
 	'green':		#4caf50,
+	'yellow':		#ffff00,
 	'orange':		#ff9800,
 	'red'	:		#f44336,
-	'rose':			#e91e63
+	'rose':			#e91e63,
+	'light-rose':	lighten(#e91e63, 40%)
 );
 

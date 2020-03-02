@@ -10,8 +10,8 @@
     padding: 0.625rem 0;
     margin-bottom: 20px;
     color: #555;
-    background-color: #fff!important;
-	box-shadow: 0 4px 18px 0 rgba(0,0,0,.12), 0 7px 10px -5px rgba(0,0,0,.15);
+    //background-color: #fff!important;
+	//box-shadow: 0 4px 18px 0 rgba(0,0,0,.12), 0 7px 10px -5px rgba(0,0,0,.15);
 
 	&.transparent {
         background-color: transparent !important;
@@ -26,36 +26,51 @@
 		justify-content: space-between;
 	}
 
-	.nav {
-		display: flex;
-		flex-wrap: wrap;
-		flex-direction: column; // cannot use `inherit` to get the `.navbar`s value
-		padding-left: 0;
-		margin-bottom: 0;
-		list-style: none;
+	ul.nav {
+		display: inline-flex;
 
-        .item .link {
-			display: block;
-            position: relative;
-            color: inherit;
-           // padding: $padding-general-x;
-            //font-weight: $font-weight-default;
-            //font-size: $mdb-btn-font-size-base;
-            //text-transform: uppercase;
-            //border-radius: $border-radius-base;
-            line-height: 20px;
-        }
+		> li.item {
+			> a.link {
+			// 	color: inherit;
+			// 	//font-size: $mdb-btn-font-size-base;
+			// 	//border-radius: $border-radius-base;
+			// 	&:hover {
+			// 		background: rgba(0,0,0,0.2);
+			// 	}
 
-        .dropdown-menu-right{
-            transform-origin: 100% 0;
-        }
+				text-decoration: none;
 
-        // .item.active .link {
-        //     &,
-        //     &:hover,
-        //     &:focus {
-        //       background-color: rgba(255, 255, 255, 0.1);
-        //     }
-        // }
+				color: #{ map-get($navbar-nav-item-link, 'color') };
+				display: #{ map-get($navbar-nav-item-link, 'display') };
+				position: #{ map-get($navbar-nav-item-link, 'position') };
+				border: #{ map-get($navbar-nav-item-link, 'border') };
+				background: #{ map-get($navbar-nav-item-link, 'background') };
+				box-shadow: #{ map-get($navbar-nav-item-link, 'box-shadow') };
+				transition: #{ map-get($navbar-nav-item-link, 'transition') };
+
+				line-height: #{ map-get($navbar-nav-item-link, 'line-height') };
+				text-transform: #{ map-get($navbar-nav-item-link, 'text-transform') };
+				font-weight: #{ map-get($navbar-nav-item-link, 'font-weight') };
+
+				padding: #{ map-get($navbar-nav-item-link, 'padding') };
+				margin: #{ map-get($navbar-nav-item-link, 'margin') };
+
+				&:hover {
+					color: #{ map-get($navbar-nav-item-link-hover, 'color') };
+					border: #{ map-get($navbar-nav-item-link-hover, 'border') };
+					box-shadow: #{ map-get($navbar-nav-item-link-hover, 'box-shadow') };
+					background: #{ map-get($navbar-nav-item-link-hover, 'background') };
+				}
+			}
+		}
+
+		> li.item.active {
+			> a.link {
+				color: #{ map-get($navbar-nav-item-link-active, 'color') };
+				border: #{ map-get($navbar-nav-item-link-active, 'border') };
+				box-shadow: #{ map-get($navbar-nav-item-link-active, 'box-shadow') };
+				background: #{ map-get($navbar-nav-item-link-active, 'background') };
+			}
+		}
 	}
 }

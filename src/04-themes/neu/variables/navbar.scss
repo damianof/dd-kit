@@ -1,0 +1,39 @@
+$navbar-nav-item-link: (
+	'color': 'black',
+	'display': 'block',
+	'position': 'relative',
+	'border': 'none',
+	'background': 'linear-gradient(160deg, #f0f1f4 0%, #e4e6eb 100%)',
+	'box-shadow': '-3px -3px 6px 2px #ffffff,'
+		+ '5px 5px 8px 0px rgba(0, 0, 0, 0.17),'
+		+ '1px 2px 2px 0px rgba(0, 0, 0, 0.1)',
+
+	'transition': '0.2s',
+
+	'line-height': '1.0',
+
+	'text-transform': 'uppercase',
+	'font-weight': '700',
+
+	'padding': '14px 20px 14px 25px',
+	'margin': '0 10px',
+);
+
+$navbar-nav-item-link-hover: (
+	'color': 'black',
+	'border': '0',
+	'box-shadow': 'inset -3px -3px 5px 0px #ffffff, -1px -1px 4px 0px #ffffff,'
+		+ 'inset 5px 5px 10px 0px rgba(0, 0, 0, 0.12),'
+		+ 'inset 2px 2px 3px 0px rgba(0, 0, 0, 0.07),'
+		+ '1px 2px 3px 0px rgba(0, 0, 0, 0.1);',
+);
+
+$navbar-nav-item-link-active: (
+	'color': 'lightblue',
+	'border': '0',
+	'box-shadow': 'inset -1px -1px 5px 0px #ffffff,'
+		+ '-1px -1px 2px 0px #ffffff,'
+		+ 'inset 5px 5px 10px 0px rgba(0, 0, 0, 0.12),'
+		+ 'inset 2px 2px 3px 0px rgba(0, 0, 0, 0.07),'
+		+ '1px 2px 3px 0px rgba(0, 0, 0, 0.1);',
+);
